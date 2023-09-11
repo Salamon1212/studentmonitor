@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container-part{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px auto 20px;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "h h" "s m" "s f";
+}
+.header-content{
+    grid-area: h;
+    background-color:deeppink;
+    display:flex;
+    justify-content: space-between;
+}
+.sidebar-content{
+    grid-area: s;
+    background-color: cyan;
+}
+.main-content{
+    grid-area: m;
+    background-color: chartreuse;
+}
+.footer-content{
+    grid-area: f;
+    background-color: purple;
+}
+.logo{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 10px;
+    align-items: center;
+}
+.logo img {
+    margin-right: 120px;
+}
+.logo span{
+    width: 200px;
+    height: 25px;
+    margin-right: 100px;
+}
+img{
+    border-radius: 20px;
+}
+.login-portal{
+    width: 100px;
+    position: relative;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-portal img{
+    margin-top: 10px;
+}
+.title{
+    position: absolute;
+    top: 60px;
+    left:0;
+}
+
+.footer-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-title{
+    background-color: white;
+    margin: 10px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.sidebar-feature ul{
+    padding: 10px;
+    height: auto;
+}
+
+.sidebar-feature ul li{
+    list-style: none;
+    padding: 15px;
+    border: 5px solid white;
+    text-align: left;
+}
+.content-title{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+    background-color: lightyellow;
+    display: flex;
+    align-items: start;
+}
+.content-title h3{
+    margin: 10px;
+}
+.main-section{
+    margin: 20px;
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+.searchbar{
+    /* margin: 20px; */
+}
+.searchbar input{
+    width: 500px;
+    height: 35px;
+    border: none;
+}
+.searchbar button{
+    height: 35px;
+    background-color: #ffc1f1;
+    border: none;
+    border-radius: 5px;
+}
+.content-feature{
+    display:flex;
+    justify-content: space-between;    
+}
+.action-hyper a{
+    text-decoration: none;
+    color:black;
+}
+.address-detail{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.address-detail div:nth-child(2){
+    color:gray;
+}
+#view-back{
+    position: relative;
+    left: 1050px;
+    bottom: 30px;
+}
